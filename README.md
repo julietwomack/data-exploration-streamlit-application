@@ -35,10 +35,10 @@ The **Data Exploration Application** was built using Python and the app framewor
 - Users can explore either descriptive statistics or visualizations with the numerical features.
 - For either option, users can choose to stratify their analysis by a character variable or a discrete numerical variable. Users will receive an error message if they stratify by a variable that is chosen to be displayed on the main visualization.
 
-#### Numerical data: Descriptive statistics
+#### Descriptive statistics
 - Users will choose which numerical variable to explore and then will be presented with initial statistics (i.e., count, mean, standard deviation, and five number summary).
 
-#### Numerical data: Visualizations
+#### Visualizations
 - Users have the option of seeing a scatterplot, histogram, boxplot, or heatmap.
 - The visualization will dynamically change with the variable(s) the user picks to display.
 - **Scatterplot:** (1) users will receive an error message if they choose the same variable to be visualized on the x and y-axis and (2) users can only select the continuous numerical variables to be displayed on the main scatterplot.
@@ -47,6 +47,23 @@ The **Data Exploration Application** was built using Python and the app framewor
 - **Heatmap:** users will see a heatmap of ALL numerical variables (discrete and continuous) and it is annotated with the correlation coefficients.
 
 ### Character data
+- Users can explore either descriptive statistics or visualizations with the character variables.
+
+#### Descriptive statistics
+- Users will be presented the option to preview stats based on the selected character variable (i.e., count, number of unique values, most frequent value, and most frequent value count)
+
+#### Visualizations
+- Users will be presented count plots.
+- Users will have the option to stratify the visualizations by another character variable or discrete numeric variable.
+
 ### Missing data
+- Users will be presented a dataframe with the count and percent of missing data by feature.
+- Users can opt to see the missing data visually (i.e., bar plot or heatmap).
 
 ## Implications & Limitations
+- Application can streamline the process of EDA for small data science projects.
+- Application can help students new to data analysis and data science gain a "feeling" for their data quickly.
+- Application works best with structured data.
+- Application does not present any functionality with date variables.
+- Application does not present all options for visualizations or descriptive statistics.
+- Application may run slowly on large datasets or features with large cardinality.
